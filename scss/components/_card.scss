@@ -164,6 +164,10 @@
 		max-width: func.em(720, var.$font-size-primary);
 	}
 
+	.card__image {
+		@include mix.border-radius(8px 8px 0 0);
+	}
+
 	.card__image-inner {
 		height: auto;
 		padding-bottom: 0;

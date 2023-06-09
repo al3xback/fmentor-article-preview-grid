@@ -391,6 +391,11 @@ ol {
     grid-template-columns: 21.5384615385em 1fr;
     max-width: 55.3846153846em;
   }
+  .card__image {
+    -webkit-border-radius: 8px 8px 0 0;
+    -moz-border-radius: 8px 8px 0 0;
+    border-radius: 8px 8px 0 0;
+  }
   .card__image-inner {
     height: auto;
     padding-bottom: 0;
