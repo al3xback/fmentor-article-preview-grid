@@ -23,7 +23,7 @@
 }
 
 .card__image {
-	@include mix.border-radius(8px 0 0 8px);
+	@include mix.border-radius(8px 8px 0 0);
 }
 
 .card__image * {
@@ -165,7 +165,7 @@
 	}
 
 	.card__image {
-		@include mix.border-radius(8px 8px 0 0);
+		@include mix.border-radius(8px 0 0 8px);
 	}
 
 	.card__image-inner {
