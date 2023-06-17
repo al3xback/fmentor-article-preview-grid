@@ -261,7 +261,7 @@ ol {
   background-color: hsl(214, 17%, 51%);
 }
 
-.card__image img {
+.card__image-inner img {
   position: absolute;
   top: 0;
   left: 0;
@@ -394,6 +394,10 @@ ol {
     -webkit-border-radius: 8px 0 0 8px;
     -moz-border-radius: 8px 0 0 8px;
     border-radius: 8px 0 0 8px;
+  }
+  .card__image-inner,
+  .card__image-inner img {
+    position: static;
   }
   .card__image-inner {
     height: auto;

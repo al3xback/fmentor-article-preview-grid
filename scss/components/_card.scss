@@ -37,7 +37,7 @@
 	background-color: var.$color-desaturated-dark-blue;
 }
 
-.card__image img {
+.card__image-inner img {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -166,6 +166,11 @@
 
 	.card__image {
 		@include mix.border-radius(8px 0 0 8px);
+	}
+
+	.card__image-inner,
+	.card__image-inner img {
+		position: static;
 	}
 
 	.card__image-inner {
