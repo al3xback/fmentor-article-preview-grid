@@ -8,11 +8,9 @@
 	margin: func.em(40, var.$font-size-primary) 0
 		func.em(60, var.$font-size-primary);
 	background-color: var.$color-white;
-	@include mix.border-radius(8px);
-	@include mix.box-shadow(
-		0 func.em(16, var.$font-size-primary)
-			func.em(30, var.$font-size-primary) rgba(0, 0, 0, 0.04)
-	);
+	border-radius: 8px;
+	box-shadow: 0 func.em(16, var.$font-size-primary)
+		func.em(30, var.$font-size-primary) rgba(0, 0, 0, 0.04);
 }
 
 .card__image,
@@ -23,11 +21,11 @@
 }
 
 .card__image {
-	@include mix.border-radius(8px 8px 0 0);
+	border-radius: 8px 8px 0 0;
 }
 
 .card__image * {
-	@include mix.border-radius(inherit);
+	border-radius: inherit;
 }
 
 .card__image-inner {
@@ -73,7 +71,7 @@
 .card__author-img {
 	width: func.em(40, var.$font-size-primary);
 	height: auto;
-	@include mix.border-radius(50%);
+	border-radius: 50%;
 }
 
 .card__author-name {
@@ -106,7 +104,7 @@
 	padding: func.em(24, var.$font-size-primary)
 		func.em(32, var.$font-size-primary);
 	background-color: transparent;
-	@include mix.transition(all 0.24s);
+	transition: all 0.24s;
 }
 
 .card__share-action,
@@ -165,7 +163,7 @@
 	}
 
 	.card__image {
-		@include mix.border-radius(8px 0 0 8px);
+		border-radius: 8px 0 0 8px;
 	}
 
 	.card__image-inner,
@@ -190,11 +188,9 @@
 		padding: func.em(16, var.$font-size-primary)
 			func.em(32, var.$font-size-primary);
 		background-color: var.$color-dark-grayish-blue;
-		@include mix.border-radius(10px);
-		@include mix.box-shadow(
-			0 func.em(8, var.$font-size-primary)
-				func.em(16, var.$font-size-primary) rgba(0, 0, 0, 0.16)
-		);
+		border-radius: 10px;
+		box-shadow: 0 func.em(8, var.$font-size-primary)
+			func.em(16, var.$font-size-primary) rgba(0, 0, 0, 0.16);
 	}
 
 	.card__share-action::before {
@@ -205,7 +201,7 @@
 		width: func.em(15, var.$font-size-primary);
 		height: func.em(15, var.$font-size-primary);
 		background-color: inherit;
-		@include mix.transform(translateX(-50%) rotate(45deg));
+		transform: translateX(-50%) rotate(45deg);
 	}
 
 	.card__share-checkbox:checked + .card__share-box {
