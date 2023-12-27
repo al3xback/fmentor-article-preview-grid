@@ -3,18 +3,20 @@
 
 .btn {
 	display: inline-grid;
-	place-items: center;
+	border: 1px solid transparent;
 	text-decoration: none;
+	cursor: pointer;
+	transition: all 0.4s;
 }
 
 .btn--icon {
+	place-items: center;
 	width: func.em(30, var.$font-size-primary);
 	height: func.em(30, var.$font-size-primary);
 	padding: func.em(2, var.$font-size-primary);
 	background-color: var.$color-light-grayish-blue;
 	border-color: var.$color-light-grayish-blue;
 	border-radius: 50%;
-	box-shadow: none;
 	color: var.$color-desaturated-dark-blue;
 }
 
