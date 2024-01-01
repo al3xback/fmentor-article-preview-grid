@@ -2,12 +2,14 @@
 @use '../abstracts/functions' as func;
 
 .btn {
-	display: inline-grid;
+	display: inline-block;
+	padding: 0;
+	background-color: transparent;
 	border: 1px solid transparent;
 	text-decoration: none;
 	color: inherit;
 	cursor: pointer;
-	transition: all 0.4s;
+	transition: all 0.15s ease-in-out;
 }
 
 .btn--icon {
