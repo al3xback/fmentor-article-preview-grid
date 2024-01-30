@@ -1,21 +1,25 @@
 @use '../abstracts/variables' as var;
 @use '../abstracts/functions' as func;
 
-.card {
+.card,
+.card__image,
+.card__image-inner,
+.card__content,
+.card__author,
+.card__author-img-box,
+.card__author-info,
+.card__share,
+.card__share-box {
 	display: grid;
+}
+
+.card {
 	max-width: func.em(320, var.$font-size-primary);
 	background-color: var.$color-white;
 	margin: func.em(40, var.$font-size-primary) 0
-		func.em(60, var.$font-size-primary);
+		func.em(20, var.$font-size-primary);
 	border-radius: 8px;
 	box-shadow: 0 16px 30px rgba(0, 0, 0, 0.04);
-}
-
-.card__image,
-.card__content,
-.card__author,
-.card__share {
-	display: grid;
 }
 
 .card__image {
@@ -97,7 +101,6 @@
 
 .card__share-box {
 	position: relative;
-	display: grid;
 	justify-items: end;
 	padding: func.em(24, var.$font-size-primary)
 		func.em(32, var.$font-size-primary);
@@ -106,7 +109,8 @@
 }
 
 .card__share-action,
-.card__share-action-buttons {
+.card__share-action-buttons,
+.card__share-action-buttons li {
 	display: grid;
 	align-items: center;
 }
@@ -138,6 +142,8 @@
 .btn--share-toggle {
 	position: relative;
 	z-index: 1;
+	display: grid;
+	place-items: center;
 }
 
 .card__share-checkbox:checked + .card__share-box {
