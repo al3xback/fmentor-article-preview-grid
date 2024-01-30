@@ -19,7 +19,10 @@
 	background-color: var.$color-light-grayish-blue;
 	border-color: var.$color-light-grayish-blue;
 	border-radius: 50%;
+	vertical-align: middle;
 	color: var.$color-desaturated-dark-blue;
+	text-align: center;
+	line-height: func.em(30, var.$font-size-primary);
 }
 
 .btn--link {
