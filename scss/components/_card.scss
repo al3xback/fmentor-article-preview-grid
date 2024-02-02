@@ -9,7 +9,10 @@
 .card__author-img-box,
 .card__author-info,
 .card__share,
-.card__share-box {
+.card__share-box,
+.card__share-action,
+.card__share-action-buttons,
+.card__share-action-buttons li {
 	display: grid;
 }
 
@@ -48,26 +51,20 @@
 
 .card__content {
 	position: relative;
+	gap: func.em(15, 16);
 	padding: func.em(32, var.$font-size-primary)
 		func.em(32, var.$font-size-primary) func.em(20, var.$font-size-primary);
 }
 
-.card__title {
-	margin-bottom: func.em(15, 16);
-}
-
 .card__desc {
-	margin-bottom: func.em(24, 13);
+	margin-bottom: func.em(10, 13);
 }
 
 .card__author {
 	grid-template-columns: auto 1fr;
 	align-items: center;
+	gap: func.em(15, var.$font-size-primary);
 	padding-right: func.em(45, var.$font-size-primary);
-}
-
-.card__author-img-box {
-	margin-right: func.em(15, var.$font-size-primary);
 }
 
 .card__author-img {
@@ -108,13 +105,6 @@
 	transition: all 0.24s;
 }
 
-.card__share-action,
-.card__share-action-buttons,
-.card__share-action-buttons li {
-	display: grid;
-	align-items: center;
-}
-
 .card__share-action {
 	position: absolute;
 	top: 0;
@@ -122,6 +112,7 @@
 	bottom: 0;
 	right: 0;
 	grid-template-columns: min-content min-content;
+	align-items: center;
 	gap: func.em(20, var.$font-size-primary);
 	padding: inherit;
 	padding-right: func.em(90, var.$font-size-primary);
@@ -136,6 +127,7 @@
 
 .card__share-action-buttons {
 	grid-template-columns: 1fr 1fr 1fr;
+	align-items: center;
 	gap: func.em(15, var.$font-size-primary);
 }
 
